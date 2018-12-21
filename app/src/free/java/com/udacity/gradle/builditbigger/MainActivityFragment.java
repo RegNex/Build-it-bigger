@@ -133,7 +133,7 @@ public class MainActivityFragment extends Fragment {
                         so i couldn't pull the jokes straightforward. i had to use ngrok(ngrok.io) to forward all request from
                         localhost port 8080 to the generated link by ngrok. i believe it should work alright on your machine.
                          */
-                        .setRootUrl("http://e543ebac.ngrok.io/_ah/api/")
+                        .setRootUrl("http://10.0.2.2:8080/_ah/api/")
                         .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
                             @Override
                             public void initialize(AbstractGoogleClientRequest<?> abstractGoogleClientRequest) throws IOException {
