@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.example.android.jokedisplayer.JokeDisplayActivity;
+import com.example.android.jokelibrary.JokeLibraryActivity;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -152,8 +152,8 @@ public class MainActivityFragment extends Fragment {
         @Override
         protected void onPostExecute(String result) {
             mJokeLoadingProgressBar.setVisibility(View.GONE);
-            Intent intentToDisplayJoke = new Intent(context, JokeDisplayActivity.class);
-            intentToDisplayJoke.putExtra(JokeDisplayActivity.EXTRA_JOKE_TEXT, result);
+            Intent intentToDisplayJoke = new Intent(context, JokeLibraryActivity.class);
+            intentToDisplayJoke.putExtra(JokeLibraryActivity.EXTRA_JOKE_TEXT, result);
             startActivity(intentToDisplayJoke);
         }
     }

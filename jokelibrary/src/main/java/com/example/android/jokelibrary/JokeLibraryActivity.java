@@ -24,6 +24,7 @@ public class JokeLibraryActivity extends AppCompatActivity {
 				mJokeDisplayTextView = findViewById(R.id.tv_joke_display);
 
 				mJokeDisplayTextView.setText(jokeTextFromIntent);
+				Toast.makeText(this, "joke is: " + jokeTextFromIntent, Toast.LENGTH_SHORT).show();
 
 			} else {
 				Toast.makeText(this, "Oops! No joke available!", Toast.LENGTH_LONG).show();
